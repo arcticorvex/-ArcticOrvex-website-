@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://arcticorvex.com/sitemap.xml
+Sitemap: https://arcticorvex.online/sitemap.xml
