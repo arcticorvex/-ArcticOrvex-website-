@@ -6,26 +6,13 @@ export const metadata: Metadata = {
   title: 'ArcticOrvex Technologies — We Build and Teach Robust Infrastructure',
   description:
     'Production-grade AWS deployment, enterprise Linux administration, and IT consultancy that keeps systems online. Registered MSME, Ministry of MSME, Government of India.',
-  generator: 'v0.app',
   icons: {
-    icon: [
-      { url: '/favicon.ico' },
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+    icon: '/favicon.ico',
     shortcut: '/favicon-32x32.png',
+    apple: '/apple-icon.png',
     other: [
+      { rel: 'icon', url: '/favicon-16x16.png', type: 'image/png', sizes: '16x16' },
+      { rel: 'icon', url: '/favicon-32x32.png', type: 'image/png', sizes: '32x32' },
       { rel: 'manifest', url: '/site.webmanifest' },
     ],
   },
@@ -48,6 +35,11 @@ export default function RootLayout({
           href="https://api.fontshare.com/v2/css?f[]=clash-display@700,600,500&f[]=satoshi@700,500,400&display=swap"
           rel="stylesheet"
         />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="apple-touch-icon" href="/apple-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className="font-sans antialiased">
         {children}

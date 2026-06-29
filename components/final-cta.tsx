@@ -1,4 +1,4 @@
-import { ArrowRight, Mail, MapPin, Github, Linkedin } from "lucide-react"
+import { ArrowRight, ExternalLink, GitBranch, Mail, MapPin } from "lucide-react"
 
 export function FinalCta() {
   return (
@@ -100,7 +100,7 @@ export function Footer() {
               rel="noreferrer"
               className="inline-flex items-center gap-2 text-sm font-medium text-text-secondary transition-colors hover:text-brand"
             >
-              <Github className="h-4 w-4" />
+              <GitBranch className="h-4 w-4" />
               GitHub
             </a>
             <a
@@ -109,7 +109,7 @@ export function Footer() {
               rel="noreferrer"
               className="inline-flex items-center gap-2 text-sm font-medium text-text-secondary transition-colors hover:text-brand"
             >
-              <Linkedin className="h-4 w-4" />
+              <ExternalLink className="h-4 w-4" />
               LinkedIn
             </a>
           </div>
