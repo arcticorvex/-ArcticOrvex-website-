@@ -1,0 +1,57 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+/* Brand fonts (Clash Display + Satoshi) loaded via <link> tags in layout.tsx */
+
+@theme {
+  /* Fonts */
+  --font-sans: 'Satoshi', sans-serif;
+  --font-display: 'Clash Display', sans-serif;
+
+  /* Backgrounds (layered dark) */
+  --color-background: #0a0a0a;
+  --color-surface: #111111;
+  --color-surface-2: #1a1a1a;
+  --color-border: #2a2a2a;
+
+  /* Text */
+  --color-foreground: #ffffff;
+  --color-text-secondary: #a0a0a0;
+  --color-text-muted: #555555;
+
+  /* Brand */
+  --color-brand: #ff5924;
+  --color-brand-light: #ff6e3e;
+  --color-brand-dark: #d04100;
+
+  /* Supporting accents */
+  --color-cyan: #24caff;
+  --color-cyan-dark: #1492e6;
+  --color-teal: #24ffc7;
+  --color-purple: #5924ff;
+
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    color: var(--color-foreground);
+    text-wrap: balance;
+  }
+  ::selection {
+    background: var(--color-brand);
+    color: #000000;
+  }
+}
