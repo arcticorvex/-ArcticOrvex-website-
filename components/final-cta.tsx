@@ -1,4 +1,4 @@
-import { ArrowRight, Mail, MapPin } from "lucide-react"
+import { ArrowRight, Mail, MapPin, Github, Linkedin } from "lucide-react"
 
 export function FinalCta() {
   return (
@@ -89,9 +89,31 @@ export function Footer() {
       </div>
 
       <div className="mx-auto mt-10 max-w-6xl border-t border-border pt-6">
-        <p className="text-sm text-text-muted">
-          © {new Date().getFullYear()} ArcticOrvex Technologies. All rights reserved.
-        </p>
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-sm text-text-muted">
+            © {new Date().getFullYear()} ArcticOrvex Technologies. All rights reserved.
+          </p>
+          <div className="flex flex-wrap items-center gap-4">
+            <a
+              href="https://github.com/arcticorvex"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 text-sm font-medium text-text-secondary transition-colors hover:text-brand"
+            >
+              <Github className="h-4 w-4" />
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/company/arcticorvex"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 text-sm font-medium text-text-secondary transition-colors hover:text-brand"
+            >
+              <Linkedin className="h-4 w-4" />
+              LinkedIn
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   )
