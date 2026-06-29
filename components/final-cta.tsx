@@ -35,7 +35,7 @@ export function FinalCta() {
                 className="inline-flex items-center gap-2 text-sm font-medium text-cyan transition-colors hover:text-brand"
               >
                 <Mail className="h-4 w-4" />
-                contact.tarunmehra@gmail.com
+                contact.arcticorvex.online
               </a>
             </div>
 
@@ -118,3 +118,4 @@ export function Footer() {
     </footer>
   )
 }
+//we jsut want to commit this file for now
