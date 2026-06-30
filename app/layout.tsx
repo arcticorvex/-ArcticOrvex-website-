@@ -1,6 +1,8 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
+import SmoothScroll from '@/components/SmoothScroll'
+import GsapAnimations from '@/components/GsapAnimations'
 
 export const metadata: Metadata = {
   title: 'ArcticOrvex Technologies — We Build and Teach Robust Infrastructure',
@@ -32,7 +34,7 @@ export default function RootLayout({
     <html lang="en" className="dark bg-background">
       <head>
         <link
-          href="https://api.fontshare.com/v2/css?f[]=clash-display@700,600,500&f[]=satoshi@700,500,400&display=swap"
+          href="https://api.fontshare.com/v2/css?f[]=clash-display@700,600,500&f[]=satoshi@700,500,400&f[]=jetbrains-mono@500&display=swap"
           rel="stylesheet"
         />
         <link rel="icon" href="/favicon.ico" />
@@ -41,7 +43,9 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className="font-sans antialiased">
+      <body className="antialiased">
+        <SmoothScroll />
+        <GsapAnimations />
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>

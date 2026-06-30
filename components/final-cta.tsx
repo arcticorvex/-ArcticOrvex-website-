@@ -4,7 +4,7 @@ export function FinalCta() {
   return (
     <section id="contact" className="px-4 py-20 sm:px-6 sm:py-24">
       <div className="mx-auto max-w-6xl">
-        <div className="relative overflow-hidden rounded-2xl border border-border bg-surface px-6 py-14 sm:px-12 sm:py-20">
+        <div className="contact-card liquid-card relative overflow-hidden px-6 py-14 sm:px-12 sm:py-20">
           <div
             aria-hidden
             className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full"

@@ -40,7 +40,7 @@ export function WhyArcticOrvex() {
             </p>
           </header>
 
-          <div className="grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-2">
+          <div className="liquid-card grid gap-px overflow-hidden border border-border bg-transparent sm:grid-cols-2">
             {differentiators.map((item) => (
               <div key={item.title} className="bg-surface-2 p-7">
                 <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-teal/10 text-teal">

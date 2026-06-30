@@ -48,7 +48,7 @@ export function Services() {
             return (
               <article
                 key={service.title}
-                className="group flex flex-col rounded-xl border border-border bg-surface p-8 transition-colors hover:border-brand"
+                className="group liquid-card flex flex-col p-8 transition duration-300 hover:border-brand/60"
               >
                 <div className={`flex h-12 w-12 items-center justify-center rounded-lg ${accent.chip}`}>
                   <service.icon className="h-6 w-6" strokeWidth={1.75} />

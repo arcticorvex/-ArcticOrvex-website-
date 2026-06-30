@@ -34,7 +34,7 @@ export function Process() {
           </h2>
         </header>
 
-        <ol className="mt-12 grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
+        <ol className="liquid-card mt-12 grid gap-px overflow-hidden border border-border bg-transparent sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((step, i) => (
             <li key={step.number} className="bg-surface p-7">
               <span className={`font-display text-3xl font-bold ${i % 2 === 0 ? "text-cyan" : "text-teal"}`}>
