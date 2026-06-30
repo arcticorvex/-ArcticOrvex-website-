@@ -41,7 +41,7 @@ export function FinalCta() {
 
             <div className="mt-10 flex items-center gap-2 text-sm text-text-muted">
               <MapPin className="h-4 w-4" />
-              Mallpur, SBS Nagar, Punjab, India
+              Remote workers, India. We are happy to work with clients worldwide.
             </div>
           </div>
         </div>
